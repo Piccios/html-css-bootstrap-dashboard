@@ -3,9 +3,10 @@ body{
     min-width: 530px;
 }
 
-a{
+header a{
     text-decoration: none;
     color: white;
+
 }
 
 ul > li{
@@ -23,6 +24,7 @@ div.side_navbar{
     color: white;
     justify-content: space-between;
 }
+
 
 
 header{
@@ -75,4 +77,5 @@ main{
         display: none;
     }
 
+    
 }
