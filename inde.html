@@ -19,7 +19,7 @@
 <body>
     <header>
         <section class="sidenav">
-            <div class="main-nav d-flex flex-column justify-content-between">
+            <div class="main-nav">
                 <div class="nav">
                     <ul>
                         <li class="mt-4 fs-6">
@@ -28,40 +28,39 @@
                         </li>
                         <li class="mt-1 fs-6">
                             <a href=""><i class="fa-solid fa-house"></i></a>
-                            <a href="" class="text">Home</a>
+                            <a href="" class="text">Stats</a>
                         </li>
                         <li class="mt-1 fs-6">
                             <a href=""><i class="fa-solid fa-house"></i></a>
-                            <a href="" class="text">Home</a>
+                            <a href="" class="text">Signals</a>
                         </li>
                     </ul>
-                </div>
-
-            
-                <div class="admin">
-                    <a href="">Admin</a>
+                    <div class="_admin">
+                        <ul>
+                            <li class="mt-1 fs-6">
+                                <a href=""><i class="fa-solid fa-house "></i></a><a href="" class="text">Admin</a> 
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
-            </section>
+        </section>        
+                
+
     </header>  
 <!-- MAIN -->
     <main>
         <section class="header">
-            <div class="container-fluid">
-                <div class="row d-flex align-items-center py-2">
-                    <div class="col">
-                        Logo
-                    </div>
-                    <div class="col-8">
-                        <form class="d-flex">
-                            <input type="search" class="form-control fs-6" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="search">
-                        </form>
-                    </div>
-                    <div class="col">
-                        icons
-                    </div>
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <img src="./style/img/logo.svg" alt="Boolean's logo">
+                    <form class="d-flex w-75" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
                 </div>
-            </div>
+            </nav>
         </section>
         <!-- STUDENTS PART -->
         <section class="students text-light">
@@ -248,7 +247,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="card col mt-2 mx-2" style="width: 95%;">
+                    <div class="card col mt-2 mx-2 mb-2" style="width: 95%;">
                         <img src="./style/img/stats.jpeg" class="card-img-top" alt="">
                         <div class="card-body">
                             <h3>Utenti attivi</h3>

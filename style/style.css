@@ -25,10 +25,7 @@ div.side_navbar{
     justify-content: space-between;
 }
 
-
-
 header{
-    display: flex;
     height: 100%;
     width: 150px;
     position: fixed;
@@ -38,9 +35,16 @@ header{
     background-color: rgb(5, 30, 52);
     color: white;
     overflow-x: hidden;
-    padding: 1rem;
     font-weight: 500;
     padding-top: 0;
+}
+
+section.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100vw;
 }
 
 div.nav ul li{
@@ -67,10 +71,6 @@ main{
 
     main{
         margin-left: 70px;
-    }
-
-    div.nav ul{
-        padding-left: 10px;
     }
 
     ul li a.text{
