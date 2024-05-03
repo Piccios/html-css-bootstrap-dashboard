@@ -21,7 +21,7 @@
         <section class="sidenav">
             <div class="main-nav">
                 <div class="nav">
-                    <ul>
+                    <ul class="px-4">
                         <li class="mt-4 fs-6">
                             <a href=""><i class="fa-solid fa-house"></i></a>
                             <a href="" class="text">Home</a>
@@ -36,7 +36,7 @@
                         </li>
                     </ul>
                     <div class="_admin">
-                        <ul>
+                        <ul class="px-4">
                             <li class="mt-1 fs-6">
                                 <a href=""><i class="fa-solid fa-house "></i></a><a href="" class="text">Admin</a> 
                             </li>
@@ -57,16 +57,31 @@
                     <img src="./style/img/logo.svg" alt="Boolean's logo">
                     <form class="d-flex w-75" role="search">
                         <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
+                        <div class="d-flex align-items-center">
+                        <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark"></i></a></div>
+                        <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark"></i></a></div>
+                        <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a></div>
+                        <div class="px-2 drpdown">
+                            <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell text-warning"></i></a>
+
+                            <ul class="dropdown-menu dropdown-menu-end ">
+                                <li><a href="" class="text-dark text-decoration-none ms-1">Profilo</a></li>
+                                
+                                <li><a href="" class="text-dark text-decoration-none ms-1">Fatturazione</a></li>
+                                
+                                <li><a href="" class="text-dark text-decoration-none ms-1">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     </form>
                 </div>
             </nav>
         </section>
         <!-- STUDENTS PART -->
         <section class="students text-light">
-            <div class="container">
-                <div class="row">
-                    <div class="d-flex align-items-center order-1 order-md-3 mt-3">
+            <div class="container-fluid">
+                <div class="row shuffle">
+                    <div class="d-flex align-items-center order-1 order-md-3 mt-2">
                         <p>Nuovo Studente</p>
                         <button class="mb-3 mx-2 px-2">+</button>
                     </div>

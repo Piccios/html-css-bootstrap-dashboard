@@ -1,12 +1,16 @@
 body{
     font-family: "Roboto", sans-serif;
-    min-width: 530px;
+    min-width: 560px;
 }
 
 header a{
     text-decoration: none;
     color: white;
 
+}
+
+.dropdown-toggle::after {
+    display: none; 
 }
 
 ul > li{
@@ -45,6 +49,7 @@ section.header{
     left: 0;
     z-index: 1;
     width: 100vw;
+    min-width: 560px;
 }
 
 div.nav ul li{
@@ -56,6 +61,7 @@ div.nav ul li{
 section.students{
     font-size: 0.8rem;
     background-color: rgb(27, 114, 232);
+    margin-top: 54px;
 }
 
 main{
@@ -77,5 +83,4 @@ main{
         display: none;
     }
 
-    
 }
