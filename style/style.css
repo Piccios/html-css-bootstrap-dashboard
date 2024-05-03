@@ -48,12 +48,13 @@ div.nav ul li{
 }
 
 section.students{
-    padding-left: 150px;
     font-size: 0.8rem;
     background-color: rgb(27, 114, 232);
-
 }
 
+main{
+    margin-left: 150px;
+}
 /* media query */
 
 @media all and (max-width:767px) {
@@ -62,17 +63,16 @@ section.students{
         width: 70px;
     }
 
+    main{
+        margin-left: 70px;
+    }
+
     div.nav ul{
         padding-left: 10px;
     }
 
     ul li a.text{
         display: none;
-    }
-
-
-    section.students{
-        padding-left: 80px;
     }
 
 }
