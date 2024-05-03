@@ -27,18 +27,18 @@
                             <a href="" class="text">Home</a>
                         </li>
                         <li class="mt-1 fs-6">
-                            <a href=""><i class="fa-solid fa-house"></i></a>
+                            <a href=""><i class="fa-solid fa-chart-simple"></i></a>
                             <a href="" class="text">Stats</a>
                         </li>
                         <li class="mt-1 fs-6">
-                            <a href=""><i class="fa-solid fa-house"></i></a>
+                            <a href=""><i class="fa-solid fa-signal"></i></a>
                             <a href="" class="text">Signals</a>
                         </li>
                     </ul>
                     <div class="_admin">
                         <ul class="px-4">
                             <li class="mt-1 fs-6">
-                                <a href=""><i class="fa-solid fa-house "></i></a><a href="" class="text">Admin</a> 
+                                <a href=""><i class="fa-solid fa-gear"></i></a><a href="" class="text">Admin</a> 
                             </li>
                         </ul>
                         
@@ -65,7 +65,7 @@
                             <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell text-warning"></i></a>
 
                             <ul class="dropdown-menu dropdown-menu-end ">
-                                <li><a href="" class="text-dark text-decoration-none ms-1">Profilo</a></li>
+                                <li><a href="" class="text-dark  text-decoration-none ms-1">Profilo</a></li>
                                 
                                 <li><a href="" class="text-dark text-decoration-none ms-1">Fatturazione</a></li>
                                 
@@ -81,10 +81,50 @@
         <section class="students text-light">
             <div class="container-fluid">
                 <div class="row shuffle">
-                    <div class="d-flex align-items-center order-1 order-md-3 mt-2">
+                    <div class="d-flex align-items-center order-1 order-md-3 ">
                         <p>Nuovo Studente</p>
-                        <button class="mb-3 mx-2 px-2">+</button>
+                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <i class="fa-solid fa-plus border p-2 rounded"></i>
+                            </a>
                     </div>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@example.com</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="basic-url" class="form-label">Your vanity URL</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                            </div>
+                            <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                            <span class="input-group-text">.00</span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                        </div>
+
+                        <div class="input-group">
+                            <span class="input-group-text">With textarea</span>
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+
                     <div class="boolean order-2 order-md-1">
                         <div class="piano_blaze d-flex align-items-center "> 
                             <h2>Boolean</h2>
@@ -93,7 +133,7 @@
                         <div class="app d-flex">
                             <p>3 app</p>
                             >>
-                            <p>+</p>
+                            <p class="border rounded-circle px-2 py-1 ms-1">+</p>
                         </div>
                     </div>
                     <div class="students_online order-3 order-md-2">
