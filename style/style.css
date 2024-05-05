@@ -17,7 +17,6 @@ ul > li{
     list-style: none;
 }
 
-
 div.side_navbar{
     height: 100vh;
 }
@@ -29,9 +28,13 @@ div.side_navbar{
     justify-content: space-between;
 }
 
+.admin{
+    margin-top: 660px;
+}
+
 header{
     height: 100%;
-    width: 150px;
+    width: 140px;
     position: fixed;
     z-index: 1;
     top: 54px;
@@ -66,7 +69,7 @@ section.students{
 
 .stud_btn{
     color: white;
-    
+
 }
 
 .stud_btn:hover{
@@ -79,8 +82,9 @@ section.students{
 }
 
 main{
-    margin-left: 150px;
+    margin-left: 140px;
 }
+
 /* media query */
 
 @media all and (max-width:767px) {

@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap-Link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- FontAwesome-Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- CSS-Link -->   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS-Link -->
     <link rel="stylesheet" href="./style/style.css">
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <title>html-css-bootstrap-dashboard</title>
 </head>
+
 <body>
     <header>
         <section class="sidenav">
             <div class="main-nav">
                 <div class="nav">
                     <ul class="px-4">
-                        <li class="mt-4 fs-6">
+                        <li class="mt-4 ms-1 fs-6">
                             <a href=""><i class="fa-solid fa-house"></i></a>
                             <a href="" class="text">Home</a>
                         </li>
-                        <li class="mt-1 fs-6">
+                        <li class="mt-1 ms-1 fs-6">
                             <a href=""><i class="fa-solid fa-chart-simple"></i></a>
                             <a href="" class="text">Stats</a>
                         </li>
@@ -35,44 +42,46 @@
                             <a href="" class="text">Signals</a>
                         </li>
                     </ul>
-                    <div class="_admin">
-                        <ul class="px-4">
-                            <li class="mt-1 fs-6">
-                                <a href=""><i class="fa-solid fa-gear"></i></a><a href="" class="text">Admin</a> 
-                            </li>
-                        </ul>
-                        
-                    </div>
                 </div>
             </div>
-        </section>        
-                
+            <div class="admin">
+                <ul class="px-4">
+                    <li class="mt-1 ms-1 fs-6">
+                        <a href=""><i class="fa-solid fa-gear"></i></a><a href="" class="text">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </header>
 
-    </header>  
-<!-- MAIN -->
+
+    <!-- MAIN -->
     <main>
         <section class="header">
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
                     <img src="./style/img/logo.svg" alt="Boolean's logo">
                     <form class="d-flex w-75" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
+                            aria-label="Search">
                         <div class="d-flex align-items-center">
-                        <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark"></i></a></div>
-                        <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark"></i></a></div>
-                        <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a></div>
-                        <div class="px-2 drpdown">
-                            <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-bell text-warning"></i></a>
+                            <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark"></i></a></div>
+                            <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark"></i></a></div>
+                            <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
+                            </div>
+                            <div class="px-2 drpdown">
+                                <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false"><i class="fa-solid fa-bell text-warning"></i></a>
 
-                            <ul class="dropdown-menu dropdown-menu-end ">
-                                <li><a href="" class="text-dark  text-decoration-none ms-1">Profilo</a></li>
-                                
-                                <li><a href="" class="text-dark text-decoration-none ms-1">Fatturazione</a></li>
-                                
-                                <li><a href="" class="text-dark text-decoration-none ms-1">Log out</a></li>
-                            </ul>
+                                <ul class="dropdown-menu dropdown-menu-end ">
+                                    <li><a href="" class="text-dark  text-decoration-none ms-1">Profilo</a></li>
+
+                                    <li><a href="" class="text-dark text-decoration-none ms-1">Fatturazione</a></li>
+
+                                    <li><a href="" class="text-dark text-decoration-none ms-1">Log out</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
                     </form>
                 </div>
             </nav>
@@ -103,7 +112,7 @@
                                     <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                                         aria-describedby="basic-addon1">
                                 </div>
-        
+
                             </div>
                             <div class="col-12 col-sm-6">
                                 <p class="mb-1 mt-2 fw-bold">Cognome</p>
@@ -128,7 +137,7 @@
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         Scegli...
                                     </button>
-        
+
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Italy</a></li>
                                         <li><a class="dropdown-item" href="#">Italia</a></li>
@@ -171,7 +180,7 @@
                     </div>
                 </div>
             </div>
-        
+
             <div class="boolean order-2 order-md-1">
                 <div class="piano_blaze d-flex align-items- ">
                     <h2>Boolean</h2>
@@ -187,7 +196,7 @@
                 <p>Studenti online negli ultimi 30 minuti</p>
             </div>
         </section>
-    <!-- CARDS -->
+        <!-- CARDS -->
         <section class="main">
             <div class="container">
                 <div class="row">
@@ -275,9 +284,9 @@
                             <div class="accordion accordion-flush" id="accordionFlushExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                            aria-controls="flush-collapseOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
                                             Come aggiungere un nuovo studente
                                         </button>
                                     </h2>
@@ -288,9 +297,9 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                            aria-controls="flush-collapseTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
                                             Come posso accedere alle informazioni del mio account?
                                         </button>
                                     </h2>
@@ -301,15 +310,16 @@
                                 </div>
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#flush-collapseThree" aria-expanded="false"
-                                            aria-controls="flush-collapseThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
                                             Posso usare questa dashboard da mobile?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Si, la nostra dashboard e' ottimizzata anche per dispositivi con schermi piu' piccoli.</div>
+                                        <div class="accordion-body">Si, la nostra dashboard e' ottimizzata anche per
+                                            dispositivi con schermi piu' piccoli.</div>
                                     </div>
                                 </div>
                             </div>
@@ -334,7 +344,7 @@
                                 <input class="form-check-input me-1" type="checkbox" value="" aria-label="..." />
                                 Controllare username github studenti
                             </li>
-                            
+
                         </ul>
                     </div>
                 </div>
@@ -345,31 +355,28 @@
                             <div class="card-body px-0">
                                 <h3 class="ps-3">Utenti attivi</h3>
                                 <p class="card-text ps-3">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
-                                
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Gennaio: 1200</li>
-                                        <li class="list-group-item">Febbraio: 800</li>
-                                        <li class="list-group-item">Marzo: 1500</li>
-                                        <li class="list-group-item py-4"><a href="">Visualizza report approfondito</a></li>
-                                    </ul>
+
+                                <ul class="list-group list-group-flush border-top">
+                                    <li class="list-group-item">Gennaio: 1200</li>
+                                    <li class="list-group-item">Febbraio: 800</li>
+                                    <li class="list-group-item">Marzo: 1500</li>
+                                    <li class="list-group-item pt-4"><a href="">Visualizza report approfondito</a></li>
+                                </ul>
                             </div>
-                        </div>    
+                        </div>
                     </div>
                 </div>
             </div>
-        
         </section>
-
-
-
-        
-
-
     </main>
     <footer>
-
-    </footer>    
+    </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
 </html>
