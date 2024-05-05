@@ -69,7 +69,6 @@ section.students{
 
 .stud_btn{
     color: white;
-
 }
 
 .stud_btn:hover{
@@ -83,6 +82,10 @@ section.students{
 
 main{
     margin-left: 140px;
+}
+
+.btn_small{
+    font-size: 0.8rem;
 }
 
 /* media query */
