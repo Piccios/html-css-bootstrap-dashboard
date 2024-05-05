@@ -77,76 +77,121 @@
                 </div>
             </nav>
         </section>
-        <!-- STUDENTS PART -->
+        <!-- STUDENTS SECTION -->
         <section class="students text-light">
             <div class="container-fluid">
                 <div class="row shuffle">
-                    <div class="d-flex align-items-center order-1 order-md-3 ">
+                    <div class="d-flex  order-1 order-md-3">
                         <p>Nuovo Studente</p>
-                        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <a class="btn stud_btn d-flex px-0 mx-1 my-1" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                            role="button" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus border p-2 rounded"></i>
-                            </a>
+                        </a>
                     </div>
-                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text" id="basic-addon1">@</span>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="offcanvas offcanvas-start custom-width" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="title fs-6 mt-2 fw-semibold">
+                            <p>Inserisci un nuovo studente</p>
                         </div>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                            <span class="input-group-text" id="basic-addon2">@example.com</span>
-                        </div>
-
-                        <div class="mb-3">
-                            <label for="basic-url" class="form-label">Your vanity URL</label>
-                            <div class="input-group">
-                                <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-                                <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <p class="mb-1 mt-2 fw-bold">Nome</p>
+                                <input type="text" class="form-control" aria-label="First name">
+                                <p class="mb-1 mt-2 fw-bold">Email</p>
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                        aria-describedby="basic-addon1">
+                                </div>
+        
                             </div>
-                            <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                            <div class="col-12 col-sm-6">
+                                <p class="mb-1 mt-2 fw-bold">Cognome</p>
+                                <input type="text" class="form-control" aria-label="Last name">
+                                <p class="mb-1 mt-2 fw-bold">Password</p>
+                                <input type="text" class="form-control" aria-label="Password">
+                            </div>
                         </div>
-
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">$</span>
-                            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-                            <span class="input-group-text">.00</span>
+                        <div class="col-12">
+                            <p class="mb-1 mt-2 fw-bold">Indirizzo</p>
+                            <input type="text" class="form-control" aria-label="Address">
                         </div>
-
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-                            <span class="input-group-text">@</span>
-                            <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <p class="fw-bold mb-1 mt-2">Citta'</p>
+                                <input type="text" class="form-control" aria-label="Address">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <p class="fw-bold mb-1 mt-2">Stato</p>
+                                <div class="dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle w-100 " type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Scegli...
+                                    </button>
+        
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Italy</a></li>
+                                        <li><a class="dropdown-item" href="#">Italia</a></li>
+                                        <li><a class="dropdown-item" href="#">Francia</a></li>
+                                        <li><a class="dropdown-item" href="#">Germania</a></li>
+                                        <li><a class="dropdown-item" href="#">Spagna</a></li>
+                                        <li><a class="dropdown-item" href="#">Regno Unito</a></li>
+                                        <li><a class="dropdown-item" href="#">Stati Uniti</a></li>
+                                        <li><a class="dropdown-item" href="#">Canada</a></li>
+                                        <li><a class="dropdown-item" href="#">Brasile</a></li>
+                                        <li><a class="dropdown-item" href="#">Argentina</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-2">
+                                <p class="fw-bold mb-1 mt-2">CAP</p>
+                                <input type="text" class="form-control" aria-label="Address">
+                            </div>
                         </div>
-
-                        <div class="input-group">
-                            <span class="input-group-text">With textarea</span>
-                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        <div class="row">
+                            <p class="fw-bold mb-1 mt-2">Foto</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group mb-3">
+                                    <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                                    <input type="text" class="form-control" placeholder="Nessun file selezionato"
+                                        aria-label="Photo" aria-describedby="basic-addon1">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="boolean order-2 order-md-1">
-                        <div class="piano_blaze d-flex align-items-center "> 
-                            <h2>Boolean</h2>
-                            <p>piano blaze</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Seleziona per proseguire
+                            </label>
                         </div>
-                        <div class="app d-flex">
-                            <p>3 app</p>
-                            >>
-                            <p class="border rounded-circle px-2 py-1 ms-1">+</p>
+                        <div class="buttons mt-1">
+                            <button type="button" class="btn btn-primary">Salva</button>
+                            <button type="button" class="btn btn-warning">Svuota</button>
                         </div>
-                    </div>
-                    <div class="students_online order-3 order-md-2">
-                        <p>Studenti online negli ultimi 30 minuti</p>
                     </div>
                 </div>
+            </div>
+        
+            <div class="boolean order-2 order-md-1">
+                <div class="piano_blaze d-flex align-items- ">
+                    <h2>Boolean</h2>
+                    <p>piano blaze</p>
+                </div>
+                <div class="app d-flex">
+                    <p>3 app</p>
+                    >>
+                    <p class="border rounded-circle px-2 py-1 ms-1">+</p>
+                </div>
+            </div>
+            <div class="students_online order-3 order-md-2">
+                <p>Studenti online negli ultimi 30 minuti</p>
             </div>
         </section>
     <!-- CARDS -->
         <section class="main">
             <div class="container">
                 <div class="row">
-                    <div class="card mx-2 mt-4 col col-lg-8 order-1 p-0">
+                    <div class="card mx-2 mt-2 col col-lg-8 order-1 p-0">
                         <div class="card-header">
                             <h2>Prossime Classi</h2>
                         </div>
@@ -238,9 +283,7 @@
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                            demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion
-                                            body.</div>
+                                        <div class="accordion-body">Clicca sul + nella sezione blu.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -253,9 +296,7 @@
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                            demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion
-                                            body. Let's imagine this being filled with some actual content.</div>
+                                        <div class="accordion-body">Clicca sull'icona della campanella.</div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
@@ -268,11 +309,7 @@
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                                         data-bs-parent="#accordionFlushExample">
-                                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
-                                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
-                                            body. Nothing more exciting happening here in terms of content, but just filling up the
-                                            space to make it look, at least at first glance, a bit more representative of how this
-                                            would look in a real-world application.</div>
+                                        <div class="accordion-body">Si, la nostra dashboard e' ottimizzata anche per dispositivi con schermi piu' piccoli.</div>
                                     </div>
                                 </div>
                             </div>

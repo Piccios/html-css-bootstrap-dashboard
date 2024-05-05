@@ -64,6 +64,20 @@ section.students{
     margin-top: 54px;
 }
 
+.stud_btn{
+    color: white;
+    
+}
+
+.stud_btn:hover{
+    background-color: white;
+    color: rgb(27, 114, 232);
+}
+
+.offcanvas.custom-width{
+    width: 60vw;
+}
+
 main{
     margin-left: 150px;
 }
@@ -83,4 +97,10 @@ main{
         display: none;
     }
 
+}
+
+@media all and (max-width:576px){
+    .offcanvas.custom-width{
+        width: 100vw;
+    }
 }
