@@ -64,10 +64,10 @@
                     <form class="d-flex w-75" role="search">
                         <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                             aria-label="Search">
-                        <div class="d-flex align-items-center">
-                            <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark"></i></a></div>
-                            <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark"></i></a></div>
-                            <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark"></i></a>
+                        <div class="d-flex align-items-center ">
+                            <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark d-none d-sm-inline-block"></i></a></div>
+                            <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark d-none d-sm-inline-block"></i></a></div>
+                            <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark d-none d-sm-inline-block"></i></a>
                             </div>
                             <div class="px-2 drpdown">
                                 <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown"
@@ -97,7 +97,7 @@
                             <i class="fa-solid fa-plus border p-2 rounded"></i>
                         </a>
                     </div>
-                    <div class="offcanvas offcanvas-start custom-width" tabindex="-1" id="offcanvasExample"
+                    <div class="offcanvas offcanvas-end custom-width" tabindex="-1" id="offcanvasExample"
                         aria-labelledby="offcanvasExampleLabel">
                         <div class="title fs-6 mt-2 fw-semibold">
                             <p>Inserisci un nuovo studente</p>
@@ -204,7 +204,7 @@
                         <div class="card-header">
                             <h2>Prossime Classi</h2>
                         </div>
-                        <table class="table table-responsive">
+                        <table class="table table-responsive table-hover">
                             <thead>
                                 <tr>
                                     <th scope="col" colspan="3">Nome</th>
@@ -219,57 +219,59 @@
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 120</td>
                                     <td class="d-none d-sm-inline-block">15 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-success rounded-pill px-1 py-0 btn_small">Done</button></td>
+                                    <td><span class="badge text-bg-success">Done</span></td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 121</td>
                                     <td class="d-none d-sm-inline-block">16 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-success rounded-pill px-1 py-0 btn_small">Done</button>
-                                    </td>
+                                    <td><span class="badge text-bg-success">Done</span></td>
+
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 122</td>
                                     <td class="d-none d-sm-inline-block">17 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-warning  rounded-pill px-1 py-0 btn_small text-light">process</button></td>
+                                    <td><span class="badge text-bg-warning text-light">Process</span></td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 123</td>
                                     <td class="d-none d-sm-inline-block">18 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-success rounded-pill px-1 py-0 btn_small">Done</button></td>
+                                    <td><span class="badge text-bg-success">Done</span></td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 124</td>
                                     <td class="d-none d-sm-inline-block">19 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-danger  rounded-pill px-1 py-0 btn_small text-light">Failed</button></td>
+                                    <td><span class="badge text-bg-danger">Failed</span>
+                                    </td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 125</td>
                                     <td class="d-none d-sm-inline-block">20 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-success rounded-pill px-1 py-0 btn_small">Done</button></td>
+                                    <td><span class="badge text-bg-success">Done</span></td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 126</td>
                                     <td class="d-none d-sm-inline-block">21 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button" class="btn btn-danger  rounded-pill px-1 py-0 btn_small text-light">Failed</button></td>
+                                    <td><span class="badge text-bg-danger">Failed</span>
+                                    </td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                                 <tr>
                                     <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 127</td>
                                     <td class="d-none d-sm-inline-block">22 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
-                                    <td><button type="button " class="btn btn-success rounded-pill px-1 py-0 btn_small">Done</button></td>
+                                    <td><span class="badge text-bg-success">Done</span></td>
                                     <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
                                 </tr>
                             </tbody>
