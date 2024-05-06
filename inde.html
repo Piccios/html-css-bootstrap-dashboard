@@ -65,9 +65,13 @@
                         <input class="form-control me-2" type="search" placeholder="Prova a cercare: Lezioni di Laravel"
                             aria-label="Search">
                         <div class="d-flex align-items-center ">
-                            <div class="px-2"><a href=""><i class="fa-solid fa-bars text-dark d-none d-sm-inline-block"></i></a></div>
-                            <div class="px-2"><a href=""><i class="fa-solid fa-circle-question text-dark d-none d-sm-inline-block"></i></a></div>
-                            <div class="px-2"><a href=""><i class="fa-solid fa-ellipsis-vertical text-dark d-none d-sm-inline-block"></i></a>
+                            <div class="px-2"><a href=""><i
+                                        class="fa-solid fa-bars text-dark d-none d-sm-inline-block"></i></a></div>
+                            <div class="px-2"><a href=""><i
+                                        class="fa-solid fa-circle-question text-dark d-none d-sm-inline-block"></i></a>
+                            </div>
+                            <div class="px-2"><a href=""><i
+                                        class="fa-solid fa-ellipsis-vertical text-dark d-none d-sm-inline-block"></i></a>
                             </div>
                             <div class="px-2 drpdown">
                                 <a href="" class="btn dropdown-toggle " role="button" data-bs-toggle="dropdown"
@@ -87,114 +91,114 @@
             </nav>
         </section>
         <!-- STUDENTS SECTION -->
-        <section class="students text-light">
-            <div class="container-fluid">
-                <div class="row shuffle">
-                    <div class="d-flex  order-1 order-md-3">
-                        <p>Nuovo Studente</p>
-                        <a class="btn stud_btn d-flex p-0 mx-1 my-1" data-bs-toggle="offcanvas" href="#offcanvasExample"
-                            role="button" aria-controls="offcanvasExample">
-                            <i class="fa-solid fa-plus border p-2 rounded"></i>
-                        </a>
+        <section class="students text-light d-flex flex-column justify-content-between flex-md-row px-md-4">
+            <article class="new_student d-flex align-items-center mb-4 order-md-2">
+                <p class="pt-3">
+                    Nuovo studente
+                </p>
+                <a class="btn stud_btn d-flex p-0 mx-1 my-1" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-plus border p-2 rounded"></i>
+                </a>
+                <div class="offcanvas offcanvas-end custom-width" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="title fs-6 mt-2 fw-semibold">
+                        <p>Inserisci un nuovo studente</p>
                     </div>
-                    <div class="offcanvas offcanvas-end custom-width" tabindex="-1" id="offcanvasExample"
-                        aria-labelledby="offcanvasExampleLabel">
-                        <div class="title fs-6 mt-2 fw-semibold">
-                            <p>Inserisci un nuovo studente</p>
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <p class="mb-1 mt-2 fw-bold">Nome</p>
-                                <input type="text" class="form-control" aria-label="First name">
-                                <p class="mb-1 mt-2 fw-bold">Email</p>
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">@</span>
-                                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
-                                        aria-describedby="basic-addon1">
-                                </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <p class="mb-1 mt-2 fw-bold">Nome</p>
+                            <input type="text" class="form-control" aria-label="First name">
+                            <p class="mb-1 mt-2 fw-bold">Email</p>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
 
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <p class="mb-1 mt-2 fw-bold">Cognome</p>
-                                <input type="text" class="form-control" aria-label="Last name">
-                                <p class="mb-1 mt-2 fw-bold">Password</p>
-                                <input type="text" class="form-control" aria-label="Password">
-                            </div>
                         </div>
-                        <div class="col-12">
-                            <p class="mb-1 mt-2 fw-bold">Indirizzo</p>
+                        <div class="col-12 col-sm-6">
+                            <p class="mb-1 mt-2 fw-bold">Cognome</p>
+                            <input type="text" class="form-control" aria-label="Last name">
+                            <p class="mb-1 mt-2 fw-bold">Password</p>
+                            <input type="text" class="form-control" aria-label="Password">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <p class="mb-1 mt-2 fw-bold">Indirizzo</p>
+                        <input type="text" class="form-control" aria-label="Address">
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <p class="fw-bold mb-1 mt-2">Citta'</p>
                             <input type="text" class="form-control" aria-label="Address">
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-sm-6">
-                                <p class="fw-bold mb-1 mt-2">Citta'</p>
-                                <input type="text" class="form-control" aria-label="Address">
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <p class="fw-bold mb-1 mt-2">Stato</p>
-                                <div class="dropdown">
-                                    <button class="btn btn-secondary dropdown-toggle w-100 " type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Scegli...
-                                    </button>
+                        <div class="col-12 col-sm-4">
+                            <p class="fw-bold mb-1 mt-2">Stato</p>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle w-100 " type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Scegli...
+                                </button>
 
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#">Italy</a></li>
-                                        <li><a class="dropdown-item" href="#">Italia</a></li>
-                                        <li><a class="dropdown-item" href="#">Francia</a></li>
-                                        <li><a class="dropdown-item" href="#">Germania</a></li>
-                                        <li><a class="dropdown-item" href="#">Spagna</a></li>
-                                        <li><a class="dropdown-item" href="#">Regno Unito</a></li>
-                                        <li><a class="dropdown-item" href="#">Stati Uniti</a></li>
-                                        <li><a class="dropdown-item" href="#">Canada</a></li>
-                                        <li><a class="dropdown-item" href="#">Brasile</a></li>
-                                        <li><a class="dropdown-item" href="#">Argentina</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-2">
-                                <p class="fw-bold mb-1 mt-2">CAP</p>
-                                <input type="text" class="form-control" aria-label="Address">
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Italy</a></li>
+                                    <li><a class="dropdown-item" href="#">Italia</a></li>
+                                    <li><a class="dropdown-item" href="#">Francia</a></li>
+                                    <li><a class="dropdown-item" href="#">Germania</a></li>
+                                    <li><a class="dropdown-item" href="#">Spagna</a></li>
+                                    <li><a class="dropdown-item" href="#">Regno Unito</a></li>
+                                    <li><a class="dropdown-item" href="#">Stati Uniti</a></li>
+                                    <li><a class="dropdown-item" href="#">Canada</a></li>
+                                    <li><a class="dropdown-item" href="#">Brasile</a></li>
+                                    <li><a class="dropdown-item" href="#">Argentina</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="row">
-                            <p class="fw-bold mb-1 mt-2">Foto</p>
-                            <div class="input-group mb-3">
-                                <div class="input-group mb-3">
-                                    <span class="input-group-text" id="basic-addon1">Scegli file</span>
-                                    <input type="text" class="form-control" placeholder="Nessun file selezionato"
-                                        aria-label="Photo" aria-describedby="basic-addon1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Seleziona per proseguire
-                            </label>
-                        </div>
-                        <div class="buttons mt-1">
-                            <button type="button" class="btn btn-primary">Salva</button>
-                            <button type="button" class="btn btn-warning">Svuota</button>
+                        <div class="col-12 col-sm-2">
+                            <p class="fw-bold mb-1 mt-2">CAP</p>
+                            <input type="text" class="form-control" aria-label="Address">
                         </div>
                     </div>
+                    <div class="row">
+                        <p class="fw-bold mb-1 mt-2">Foto</p>
+                        <div class="input-group mb-3">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                                <input type="text" class="form-control" placeholder="Nessun file selezionato"
+                                    aria-label="Photo" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Seleziona per proseguire
+                        </label>
+                    </div>
+                    <div class="buttons mt-1">
+                        <button type="button" class="btn btn-primary">Salva</button>
+                        <button type="button" class="btn btn-warning">Svuota</button>
+                    </div>
                 </div>
-            </div>
+            </article>
+            <article class="plans mb-4 order-md-0">
+                <p class="fs-2">
+                    Boolean
+                </p>
+                <p>
+                    app >>
+                </p>
+            </article>
+            <article class="online-students mb-4 order-md-1">
+                <p>
+                    Studenti online negli ultimi 30 minuti
+                </p>
+                <p class="fs-3">
+                    125
+                </p>
 
-            <div class="boolean order-2 order-md-1">
-                <div class="piano_blaze d-flex align-items- ">
-                    <h2>Boolean</h2>
-                    <p>piano blaze</p>
-                </div>
-                <div class="app d-flex">
-                    <p>3 app</p>
-                    >>
-                    <p class="border rounded-circle px-2 py-1 ms-1">+</p>
-                </div>
-            </div>
-            <div class="students_online order-3 order-md-2">
-                <p>Studenti online negli ultimi 30 minuti</p>
-            </div>
+            </article>
         </section>
         <!-- CARDS -->
         <section class="main">
@@ -216,63 +220,111 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 120</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 120</td>
                                     <td class="d-none d-sm-inline-block">15 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 121</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 121</td>
                                     <td class="d-none d-sm-inline-block">16 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
 
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 122</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 122</td>
                                     <td class="d-none d-sm-inline-block">17 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-warning text-light">Process</span></td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 123</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 123</td>
                                     <td class="d-none d-sm-inline-block">18 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 124</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 124</td>
                                     <td class="d-none d-sm-inline-block">19 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-danger">Failed</span>
                                     </td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 125</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 125</td>
                                     <td class="d-none d-sm-inline-block">20 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 126</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 126</td>
                                     <td class="d-none d-sm-inline-block">21 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-danger">Failed</span>
                                     </td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td scope="row" colspan="3"><button type="button" class="btn btn-danger rounded-circle me-2">no</button>Classe 127</td>
+                                    <td scope="row" colspan="3"><button type="button"
+                                            class="btn btn-danger rounded-circle me-2">no</button>Classe 127</td>
                                     <td class="d-none d-sm-inline-block">22 Feb 2024</td>
                                     <td class="d-none d-sm-inline-block">20%</td>
                                     <td><span class="badge text-bg-success">Done</span></td>
-                                    <td class="d-flex"><div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i></div><div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i></div></td>
+                                    <td class="d-flex">
+                                        <div class="border border-2 me-1 rounded"><i class="fa-solid fa-pencil p-2"></i>
+                                        </div>
+                                        <div class="border border-2 rounded"><i class="fa-solid fa-trash-can p-2"></i>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
