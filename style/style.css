@@ -67,6 +67,10 @@ section.students{
     margin-top: 54px;
 }
 
+p.evid{
+    background-color: rgb(22, 91, 186);
+
+}
 .stud_btn{
     color: white;
 }
